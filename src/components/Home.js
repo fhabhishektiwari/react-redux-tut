@@ -1,13 +1,10 @@
 import React from 'react'
-import pic1 from '../img/iphone.png';
 import pic2 from '../img/iphone6snew.png';
-import pic3 from '../img/basketcart.png';
-const Home=()=>{
+
+const Home=(props)=>{
+    console.log("Home",props)
     return(
         <div>
-            <div className='add-to-cart'>
-                <img src={pic3}/>
-            </div>
             <h1>Home Page</h1>
             <div className='cart-wrapper'>
                 <div className='img-wrapper item'>
@@ -19,7 +16,13 @@ const Home=()=>{
 
                 </div>
                 <div className='btn-wrapper item'>
-                    <button>Add to cart</button>
+                    <button onClick={()=>{
+                        props.addToCartHandler([{price:1100,name:'I-phone 13'}]);
+                    }}>Add to cart</button>
+
+                    <button className='btn-purple' onClick={()=>{
+                        props.removeToCartHandler();
+                    }}>Remove to cart</button>
                 </div>
             </div>
         </div>

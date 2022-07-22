@@ -28,48 +28,55 @@
   color: #61dafb;
 }
 
-
 /* custom style */
-.add-to-cart img{
-  width: 50px;
-  height: 50px;
-  /* margin: 10px auto; */
-  position: absolute;
-  top: 10px;
-  right: 1%;
-}
-
-.cart-wrapper{
-  /* width:250px; */
-  display: flex;
-  width: 650px;
-  justify-content: space-around;
-  align-items: center;
-  height: 350px;
-  box-shadow: 0 0 5px #000;
-  margin: 0 auto;
-  border-radius: 7px;
-  padding: 1em;
-}
-
-.img-wrapper img{
-  width: 250px;
-  height: 250px;
-}
-.btn-wrapper button{
-  display: inline-block;
-  width: 110px;
-  padding: 8px 12px;
-  margin: 0 auto;
-  color: #fff;
+.btn-wrapper button {
+  width: 120px;
   background-color: red;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-  box-shadow: 0 0 5px #000;
+  border: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: #333 0px 1px 5px;
+  margin: 8px;
 }
-
-
+.btn-wrapper .btn-purple{
+  background-color: purple;
+}
+.img-wrapper img {
+  width: 100px;
+  margin-top: -10px;
+}
+.cart-wrapper {
+  height: 150px;
+  width: 600px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
+}
+.item {
+  float: left;
+  display: block;
+  width: 120px;
+  padding: 20px;
+  height: 70px;
+}
+.add-to-cart img {
+  width: 80px;
+  position: absolute;
+  right: 1%;
+  top: 3%;
+}
+.cart-count {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  z-index: -1;
+  background-color: red;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
 
 @keyframes App-logo-spin {
   from {
