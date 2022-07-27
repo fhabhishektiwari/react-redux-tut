@@ -1,0 +1,35 @@
+.form-data{
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    align-content: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #ccac6c;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.9em;
+    /* box-shadow: 0 0 5px #000; */
+    margin: 8px 0;
+    transition: all 0.4s;
+    color: #fff;
+
+}
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
